@@ -19,6 +19,8 @@ void printNumberVersionTwo() {
   int number = 2;
   while (number <= 100) {
     print(number);
+    // Number langsung ditambah 2
+    // Otomatis angka berikutnya adalah genap.
     number += 2;
   }
 }
