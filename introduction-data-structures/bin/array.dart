@@ -1,5 +1,5 @@
 void main() {
-  var array = ['Anggur', 'Belimbing', 'Ceri', 'Durian', 'Erbis'];
+  var array = ['Anggur', 'Belimbing', 'Frambos', 'Ceri', 'Durian', 'Erbis'];
 
   // Reading
   var durian = array[3];
@@ -20,4 +20,12 @@ void main() {
   // Insertion value di tengah array
   array.insert(2, 'Frambos');
   print(array); // console: [Anggur, Belimbing, Frambos, Ceri, Durian, Erbis]
+
+  // Deletion (menghapus 'Ceri')
+  array.removeAt(3);
+  print(array); // console: [Anggur, Belimbing, Frambos, Durian, Erbis]
+
+  // Deletion (menghapus data diawal array)
+  array.removeAt(0);
+  print(array); // console: [Belimbing, Frambos, Ceri, Durian, Erbis]
 }
