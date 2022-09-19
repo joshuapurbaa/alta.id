@@ -19,4 +19,15 @@ void main() {
   sets.add('Frambos');
   print(
       sets); // console: {'Anggur', 'Belimbing', 'Ceri', 'Durian', 'Erbis', 'Frambos'}
+  
+  // Insertion di awal
+  if (sets.contains('Frambos')) { // Membutuhkan 5 steps
+    print('Nilai Frambos sudah ada');
+  } else {
+    var setToList = sets.toList();
+    setToList.insert(0, 'Frambos'); // Membutuhkan 5 steps + 1 steps
+    sets = setToList.toSet();
+    print(sets);
+  }
+
 }
